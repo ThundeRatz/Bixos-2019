@@ -16,7 +16,7 @@
 #define DELAY 0
 
 typedef void (*strategy_rozeta_t)(void);
-typedef void (*strategy_onix_t)(bool delayed);
+typedef void (*strategy_onix_t)(bool);
 
 static void estrela(void);
 static void dibre(void);

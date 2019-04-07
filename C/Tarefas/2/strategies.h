@@ -15,7 +15,7 @@
  * Public Variables
  *****************************************/
 
-int sensor_position;
+extern int sensor_position;
 
 /*****************************************
  * Public Functions Prototypes

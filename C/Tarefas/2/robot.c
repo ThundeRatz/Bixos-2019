@@ -12,7 +12,7 @@
 #include "dojo.h"
 
 /*****************************************
- * Public Constants Definitions
+ * Public Variables Definitions
  *****************************************/
 
 orientation_t current_rozeta_orientation = UPWARD;

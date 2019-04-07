@@ -17,13 +17,13 @@
  * Public Variables
  *****************************************/
 
-float delay_time;
+extern float delay_time;
 
-uint8_t rozeta_line;
-uint8_t rozeta_column;
+extern uint8_t rozeta_line;
+extern uint8_t rozeta_column;
 
-uint8_t oponent_line;
-uint8_t oponent_column;
+extern uint8_t oponent_line;
+extern uint8_t oponent_column;
 
 /*****************************************
  * Public Functions Prototypes

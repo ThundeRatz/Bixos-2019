@@ -26,9 +26,9 @@
  * Public Variables
  *****************************************/
 
-bool match_start;
+extern bool match_start;
 
-char dojo[DOJO_LINES][DOJO_COLUMNS];
+extern char dojo[DOJO_LINES][DOJO_COLUMNS];
 
 /*****************************************
  * Public Functions Prototypes

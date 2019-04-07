@@ -13,10 +13,12 @@
 #include "dojo.h"
 
 /*****************************************
- * Public Constants Definitions
+ * Public Variables Definitions
  *****************************************/
 
 bool match_start = false;
+
+char dojo[DOJO_LINES][DOJO_COLUMNS];
 
 /*****************************************
  * Public Functions Bodies Definitions

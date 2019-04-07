@@ -38,12 +38,12 @@ typedef enum orientation {
  * Public Variables
  *****************************************/
 
-orientation_t current_rozeta_orientation;
-orientation_t current_oponent_orientation;
+extern orientation_t current_rozeta_orientation;
+extern orientation_t current_oponent_orientation;
 
-char* upwards_robot[ROBOT_LINES];
+extern char* upwards_robot[ROBOT_LINES];
 
-char* downwards_robot[ROBOT_LINES];
+extern char* downwards_robot[ROBOT_LINES];
 
 /*****************************************
  * Public Functions Prototypes

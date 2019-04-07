@@ -15,7 +15,7 @@
 #include "delay.h"
 
 /*****************************************
- * Public Constants Definitions
+ * Public Variables Definitions
  *****************************************/
 
 float delay_time = 0.5;

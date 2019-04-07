@@ -6,22 +6,20 @@ OBJECTS = $(patsubst %.c, $(BUILD_DIR)/%.o, $(SOURCES))
 
 .PHONY: all clean run format
 
-all: $(BUILD_DIR) tarefa_c
+all: tarefa_c
 
 $(BUILD_DIR):
 	@echo "Creating build directory"
 	@mkdir -p $@
 
-$(BUILD_DIR)/%.o: %.c
+$(BUILD_DIR)/%.o: %.c | $(BUILD_DIR)
 	gcc -g -Wall -Wextra -o $@ -c $^
 
 clean:
 ifeq ($(OS), Windows_NT)
-	rm $(BUILD_DIR)/*.o *.exe
-	rmdir $(BUILD_DIR)
+	rm -r $(BUILD_DIR) *.exe
 else
-	rm $(BUILD_DIR)/*.o tarefa_c
-	rmdir $(BUILD_DIR)
+	rm -r $(BUILD_DIR) tarefa_c
 endif
 
 tarefa_c: $(OBJECTS)

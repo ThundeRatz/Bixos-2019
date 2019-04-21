@@ -30,7 +30,7 @@ typedef enum laser_action {
  *****************************************/
 
 /**
- * @brief Initializes the buzzer.
+ * @brief Initializes the servo.
  */
 void servo_init();
 

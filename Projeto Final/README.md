@@ -17,7 +17,7 @@ HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 Essa função inicia a PWM em um timer. Os parâmetros vão depender do timer e do canal. A parte ```&htim1``` é o handler do timer e especifica qual timer a função está se referindo. Já a parte ```TIM_CHANNEL_1``` especifica em qual canal do timer a PWM será iniciada. Essa função é utilizada na inicialização de periféricos que utilizam PWM. 
 
 ``` C
-__HAL_TIM_SET_COUNTER(&htim1, counter);
+__HAL_TIM_SET_AUTORELOAD(&htim1, counter);
 ```
 Esta função determina qual o perído de um timer. Da mesma forma que a função acima, os parâmetros dependem do timer. O handler determina qual o timer a ser afetado. Já o parâmetro counter (não precisa ser esse nome) é o valor do período do timer. Como o timer será usado para gerar uma PWM, com essa função se pode alterar o período da PWM, alterando assim, a sua frequência. Os períodos das PWM já estão previamente definidos, vocês só devem utilizar essa função se for necessário alterar o período.
 
